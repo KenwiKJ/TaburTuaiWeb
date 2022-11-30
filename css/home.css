@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    position: static; 
+    width: 100%;
+    margin: auto;
+    padding: 10px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+    background-color: rgb(248,249,250);
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(8,90,67);
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0px;
+    background: rgb(8,90,67);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.logo-company img{
+    width: 200px;
+    height: 100px;
+}
+
+/*Background*/
+.background{
+    width: 100%;
+    height: 645px;
+    padding: 150px 100px 0px 100px;
+    background-image: linear-gradient(rgba(8,90,67,0.5),rgba(8,90,67,1)),url(../img/bg.jpg);
+    background-size: cover;
+    font-family: 'Assistant', sans-serif;
+    color: white;
+}
+
+.background h1{
+    width: 50%;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.background p{
+    width: 50%;
+    margin-top: 10px;
+    line-height: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Story*/
+.container-story{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    padding: 60px 100px;
+    color: white;
+    background-color: rgb(8,90,67);
+}
+
+.img-story {
+    width: 50%;
+    text-align: left;
+    background-size: cover;
+}
+
+.img-story img{
+    border: 10px solid rgb(192,197,195);
+    border-radius: 10px;
+    width: 550px;
+    height: 300px;
+}
+
+.text-story{
+    width: 50%;
+    margin-left: 30px;
+}
+
+.text-story h2{
+    font-size: 50px;
+    font-family: 'Assistant', sans-serif;
+}
+
+.text-story p{
+    padding: 15px 0px 50px 0px;
+    line-height: 30px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-story .more{
+    padding-top: 10px;
+}
+
+.button-story{
+    background-color: white;
+    color: rgb(8,90,67);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 15px;
+    transition: .4s;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.button-story:hover{
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+
+/*Bagian Hadir*/
+.container-mengapa{
+    background: rgb(8,90,67);
+    width: 100%;
+    padding: 40px 100px;
+}
+
+.title-mengapa {
+    width: 97%;
+    margin: 20px auto;
+}
+
+.title-mengapa h2{
+    color: white;
+    font-size: 50px;
+    margin: 20px auto;
+    text-decoration: none;
+    font-family: 'Assistant', sans-serif;
+}
+
+.title-mengapa p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.box-mengapa{
+    display: flex;
+    justify-content: center;
+    height: 360px;
+}
+
+.card-mengapa{
+    height: auto;
+    width: 260px;
+    color: black;
+    background: white;
+    border-radius: 20px;
+    margin: auto 15px;
+    position: static;
+}
+
+.card-image-mengapa{
+    background-color: white;
+    height: 200px;
+    margin-bottom: 10px;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.img-1-mengapa{
+    background-image: url(../img/DSC00831.JPG);
+}
+
+.img-2-mengapa{
+    background-image: url(../img/43911.jpg);
+}
+
+.img-3-mengapa{
+    background-image: url(../img/43911.jpg);
+}
+
+.img-4-mengapa{
+    background-image: url(../img/43911.jpg);
+}
+
+.all-text{
+    padding: 10px 20px;
+}
+
+.card-mengapa h5{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-mengapa p{
+    font-size: 15px;
+    line-height: 17px;
+    margin-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Album*/
+.container-mitra{
+    width: 100%;
+    height: auto;
+    padding: 70px 100px;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.title{
+    width: 45%;
+    font-size: 40px;
+    line-height: 50px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+}
+
+.box-album{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.box{
+    width: 60px;
+    margin: 15px;
+    height: 250px;
+    border-radius: 20px;
+    flex-grow: 1;
+    background-color: rgb(8,90,67);
+    color: white;
+}
+
+.box .img-mini img{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.text-box-mini{
+    text-align: center;
+    padding: 10px 20px;
+    color: white;
+}
+
+.box .img-1{
+    width: 330px;
+    height: 250px;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.box .img-2{
+    width: 330px;
+    height: 250px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.text-box{
+    padding: 20px;
+    color: white;
+}
+
+.double {
+    display: flex;
+    flex-basis: 35%;
+}
+
+/*Berita*/
+.container-berita{
+    background: white   ;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    padding: 35px 100px;
+}
+
+.title-berita h2{
+    color: black;
+    font-size: 50px;
+    width: 1130px;
+    margin: 30px auto;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box-berita{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.card-berita{
+    height: auto;
+    width: 355px;
+    background: white;
+    margin: auto 15px;
+    position: static;
+    text-align: left;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px 3px rgb(221, 221, 226);
+}
+
+.card-image-berita{
+    background-color: black;
+    height: 200px;
+    margin-bottom: 30px;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.img-1-berita{
+    background-image: url(./img/ab.jpg);
+}
+
+.img-2-berita{
+    background-image: url(./img/ab.jpg);
+}
+
+.img-3-berita{
+    background-image: url(./img/ab.jpg);
+}
+
+.card-berita h5{
+    color: black;
+    font-size: 21px;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-berita p{
+    height: 120px;
+    color: black;
+    font-size: 15px;
+    line-height: 26px;
+    padding: 10px 20px;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+}
+
+.text-more-berita{
+    display: flex;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.text-more-berita h5{
+    font-size: 15px;
+    margin-right: 90px;
+}
+
+.text-more-berita p a{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(8,90,67);
+    font-family: 'Roboto', sans-serif;
+}
+
+.fa-calendar{
+    padding-right: 7px;
+}
+
+.button-container{
+    margin: 40px 15px;
+    text-align: center;
+}
+
+button{
+    color: white;
+    font-size: 14px;
+    background-color: rgb(8,90,67);
+    border: 3px solid rgb(8,90,67);
+    padding: 15px 30px;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+button:hover{
+    color: rgb(8,90,67);
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Bagian Footer*/
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background:rgb(8,90,67);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .container-footer .sec{
+    margin-right: 30px;
+}
+
+footer .container-footer .sec.aboutus{
+    width: 40%;
+    line-height: 30px;
+}
+
+footer .container-footer h2{
+    position: relative;
+    color: white;
+    font-weight: 500px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .container-footer h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: white;
+}
+
+footer p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer img{
+    width: 200px;
+    height: 70px;
+}
+
+.sosmed{
+    margin-top: 20px;
+    display: flex;
+}
+
+.sosmed li{
+    list-style: none;
+}
+
+.sosmed li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:10px ;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sosmed li a:hover{
+    background: rgb(8,90,67);
+    border: 2px solid white;
+}
+
+.sosmed li a .fa-brands{
+    color: #222;
+    font-size: 20px;
+}
+
+.sosmed li a .fa-brands:hover{
+    color: white;
+    font-size: 20px;
+}
+
+.quicklinks{
+    position: relative;
+    width: 25%;
+}   
+
+.quicklinks ul li{
+    list-style: none;
+}
+
+.quicklinks ul li a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1){
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.contact .info li span{
+    color: white;
+}
+
+.contact .info li a{
+    color: white;
+    text-decoration: none;
+}
+
+.contact .info li a:hover{
+    color: #fff;
+}
+
+.copyright{
+    width: 100%;
+    background: rgb(8,90,67);
+    padding: 8px 100px;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}

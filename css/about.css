@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    position: static; 
+    width: 100%;
+    margin: auto;
+    padding: 10px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+    background-color: rgb(248,249,250);
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(8,90,67);
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0px;
+    background: rgb(8,90,67);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.logo-company img{
+    width: 200px;
+    height: 100px;
+}
+
+/*Background*/
+.background{
+    width: 100%;
+    height: 500px;
+    padding: 260px 100px 0px 100px;
+    background-image: linear-gradient(rgba(8,90,67,0.4),rgba(8,90,67,0.98)),url(../img/bg.jpg);
+    background-size: cover;
+    font-family: 'Assistant', sans-serif;
+    color: white;
+}
+
+.background h3{
+    width: 40%;
+    padding-bottom: 20px;
+    text-align: justify;
+    border-bottom: 5px solid white;
+}
+
+.background h2 {
+    margin-top: 10px;
+}
+
+/*Visi & Video*/
+.vm{
+    background-color: rgb(8,90,67);
+    width: 100%;
+    height: auto;
+    padding: 70px 100px;
+    display: flex;
+    color: white;
+}
+
+.text-vm{
+    text-align: justify;
+    margin-right: 30px;
+}
+
+.text-vm h2{
+    width: 7%;
+    border-bottom: 5px solid rgb(8,90,67);
+    margin-bottom: 10px;
+    font-family: 'Assistant', sans-serif;
+}
+
+.text-vm .text{
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.visi{
+    margin-bottom: 20px;
+}
+
+.misi ul li{
+    margin-left: 20px;
+}
+
+/*Bagian Tim*/
+.container-tim{
+    width: 100%;
+    height: auto;
+    padding: 70px 100px;
+}
+
+.title-tim h2{
+    color: rgb(8,90,67);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 35px;
+    font-family: 'Assistant', sans-serif;
+}
+
+.box-tim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    color: white;
+}
+
+.card-tim{
+    height: 380px;
+    width: 250px;
+    background: rgb(8,90,67);
+    border-radius: 30px;
+    margin: 10px 45px;
+    position: static;
+    text-align: center;
+}
+
+.photo-1{
+    border-radius: 20px 20px 30px 30px;
+    height: 200px;
+    width: 250px;
+}
+
+.box-name{
+    width: 60%;
+    height: 50px;
+    margin: 10px auto;
+    align-items: center;
+    font-family: 'Assistant', sans-serif;
+}
+
+.box{
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-tim h5{
+    width: 60%;
+    margin: 0px auto;
+    color: black;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sosmed-tim{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.sosmed-tim li{
+    list-style: none;
+}
+
+.sosmed-tim li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sosmed-tim li a:hover{
+    background: rgb(8,90,67);
+}
+
+.sosmed-tim li a .fa-brands{
+    color: #fff;
+    font-size: 20px;
+}
+
+
+/*Bagian Footer*/
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background:rgb(8,90,67);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .container-footer .sec{
+    margin-right: 30px;
+}
+
+footer .container-footer .sec.aboutus{
+    width: 40%;
+    line-height: 30px;
+}
+
+footer .container-footer h2{
+    position: relative;
+    color: white;
+    font-weight: 500px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .container-footer h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: white;
+}
+
+footer p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer img{
+    width: 200px;
+    height: 70px;
+}
+
+.sosmed{
+    margin-top: 20px;
+    display: flex;
+}
+
+.sosmed li{
+    list-style: none;
+}
+
+.sosmed li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:10px ;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sosmed li a:hover{
+    background: rgb(8,90,67);
+    border: 2px solid white;
+    color: white;
+}
+
+.sosmed li a .fa-brands{
+    color: #222;
+    font-size: 20px;
+}
+
+.quicklinks{
+    position: relative;
+    width: 25%;
+}   
+
+.quicklinks ul li{
+    list-style: none;
+}
+
+.quicklinks ul li a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1){
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.contact .info li span{
+    color: white;
+}
+
+.contact .info li a{
+    color: white;
+    text-decoration: none;
+}
+
+.contact .info li a:hover{
+    color: #fff;
+}
+
+.copyright{
+    width: 100%;
+    background: rgb(8,90,67);
+    padding: 8px 100px;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
